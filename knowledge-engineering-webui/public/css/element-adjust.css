@@ -1,0 +1,208 @@
+z /*修改element 样式*/
+.ce-search > .el-input__inner {
+    padding: 0 10px;
+}
+
+.el-tabs--border-card {
+    box-shadow: none;
+}
+
+.el-select {
+    display: block;
+}
+
+.el-table th {
+    background: #e7eaf0;
+    color: #555;
+}
+
+.el-submenu__title i {
+    color: inherit;
+}
+
+.el-table .cell {
+    height: 24px;
+}
+
+.ec-text__center > .cell {
+    text-align: center;
+}
+
+/*dialog*/
+.ce-dialog {
+    background: #efefef;
+}
+
+.ce-dialog > .el-dialog__header {
+    padding: 0;
+}
+
+.ce-dialog > .el-dialog__body {
+    padding: 15px;
+    margin: 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+/*5列样式*/
+@media only screen and (min-width: 768px) {
+    .el-col-sm-3-4 {
+        width: 14.2%
+    }
+
+    .el-col-sm-offset-3-4 {
+        margin-left: 14.2%
+    }
+
+    .el-col-sm-pull-3-4 {
+        position: relative;
+        right: 14.2%
+    }
+
+    .el-col-sm-push-3-4 {
+        position: relative;
+        left: 14.2%
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .el-col-md-3-4 {
+        width: 14.2%
+    }
+
+    .el-col-md-offset-3-4 {
+        margin-left: 14.2%
+    }
+
+    .el-col-md-pull-3-4 {
+        position: relative;
+        right: 14.2%
+    }
+
+    .el-col-md-push-3-4 {
+        position: relative;
+        left: 14.2%
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .el-col-lg-3-4 {
+        width: 14.2%
+    }
+
+    .el-col-lg-offset-3-4 {
+        margin-left: 14.2%
+    }
+
+    .el-col-lg-pull-3-4 {
+        position: relative;
+        right: 14.2%
+    }
+
+    .el-col-lg-push-3-4 {
+        position: relative;
+        left: 14.2%
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .el-col-xl-3-4 {
+        width: 14.2%
+    }
+
+    .el-col-xl-offset-3-4 {
+        margin-left: 14.2%
+    }
+
+    .el-col-xl-pull-3-4 {
+        position: relative;
+        right: 14.2%
+    }
+
+    .el-col-xl-push-3-4 {
+        position: relative;
+        left: 14.2%
+    }
+}
+/*折叠标题*/
+.el-collapse-item__header {
+    font-size: 14px;
+    padding-left: 16px;
+}
+.el-collapse-item__header:hover {
+    color: #289bf1;
+}
+/*双日历*/
+.el-date-editor--datetimerange.ce-date, .ce-date.el-date-editor--datetimerange.el-input__inner{
+    width: 100%;
+}
+
+/*建模弹窗*/
+.ce-model > .el-dialog__body {
+    padding: 0;
+    margin: 6px;
+    background: #fff;
+    border: 1px solid #ddd;
+    height:calc(100vh - 12px);
+    box-sizing: border-box;
+}
+.ce-model > .el-dialog__footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/*特征插件*/
+.el-menu-bn {
+    border:none;
+}
+.ce-dialog__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+    max-height: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+}
+.ce-dialog__center  > .el-dialog__body {
+    overflow: auto;
+}
+.el-transfer-panel__item.el-checkbox {
+    display: block;
+}
+
+.ce-form-mn {
+    margin-bottom: 0;
+}
+.ce-transfer > .el-transfer-panel {
+    width:280px;
+}
+
+.el-button--mini, .el-button--small {
+    line-height: 1.2;
+}
+
+.assist-button {
+    padding-left:5px ;
+    padding-right: 5px;
+}
+.ce-ellipsis > .cell {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+/*建模tabs 调整空间 放 操作按钮*/
+.ce-editTabs .el-tabs__nav-wrap {
+    margin-right:210px;
+}
+/*tabs 内容页填充去掉*/
+.ce-editTabs > .el-tabs__content {
+    padding:0;
+}
