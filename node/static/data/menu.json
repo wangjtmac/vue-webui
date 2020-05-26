@@ -1,0 +1,6 @@
+[
+  {"title" : "index","url":"first.html","focus":"true"},
+  {"title" : "about","url":"about.html","focus":"false"},
+  {"title" : "email","url":"email.html","focus":"false"},
+  {"title" : "profile","url":"profile.html","focus":"false"}
+]

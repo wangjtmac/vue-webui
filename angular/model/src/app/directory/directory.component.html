@@ -1,0 +1,22 @@
+<h1>
+  directory works! {{id}}
+</h1>
+
+<div class="row">
+  <div class="col-3">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['./album']" href="#">Album</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['./artist']">Artist</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['./music']">Music</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-9">
+    <router-outlet></router-outlet>
+  </div>
+</div>

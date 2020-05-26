@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "details": [
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号1",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号2",
+          "type": "字符型",
+          "length": 20
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号3",
+          "type": "字符型",
+          "length": 30
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号4",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号5",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号6",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号7",
+          "type": "字符型",
+          "length": 20
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号8",
+          "type": "字符型",
+          "length": 30
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号9",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号10",
+          "type": "字符型",
+          "length": 200
+        }
+      ]
+    },
+    {
+      "id" : 2 ,
+      "details": [
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号21",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号22",
+          "type": "字符型",
+          "length": 20
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号23",
+          "type": "字符型",
+          "length": 30
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号24",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号25",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号26",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号27",
+          "type": "字符型",
+          "length": 20
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号28",
+          "type": "字符型",
+          "length": 30
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号29",
+          "type": "字符型",
+          "length": 200
+        },
+        {
+          "nodeName": "YHZGX",
+          "dataItem": "公民身份证号20",
+          "type": "字符型",
+          "length": 200
+        }
+      ]
+    },
+    {
+      "id":3,
+      "details":[]
+    }
+
+  ],
+  "users":[
+    {}
+  ]
+}

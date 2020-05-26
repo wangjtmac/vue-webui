@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目</title>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/zxx.lib.css">
+</head>
+<body>
+<div class="tc p10">
+    <button class="btn btn-danger btn-sm "  id="sendGet">发送get请求</button>
+    <button class="btn btn-success btn-sm "  id="sendPost">发送post请求</button>
+    <button class="btn btn-info btn-sm "  id="sendGetPost">发送post/get请求</button>
+    <input type="text" id="search" class="dib input-group-text h28 lh28">
+    <button class="btn btn-info btn-sm "  id="sendRoute">发送get,路由传参</button>
+    <button class="btn btn-info btn-sm "  id="sendP">发送post,路由传参</button>
+</div>
+<div class="container">
+    <table class="table table-hover table-bordered tc">
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>年级</th>
+        </tr>
+        </thead>
+        <tbody id="list">
+
+        </tbody>
+    </table>
+    <div id="msg"></div>
+</div>
+
+<script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
+<script>
+
+    sendP.onclick = function(){
+        var list = [
+            {
+                name : "Tom" ,
+                age : 20 ,
+                gender : "boy" ,
+                grade : 8
+            }
+        ];
+        $.ajax({
+            url : "/postS",
+            type : "post" ,
+            data : list[0],
+            success : function(data){
+                console.log(data);
+                if(data.success){
+                    $('#msg').html(data.msg);
+                }else {
+                    $('#msg').html(data.msg);
+                }
+            }
+        })
+    };
+
+    sendRoute.onclick = function(){
+        var id = $('#search').val()-1;
+      $.ajax({
+          url : "/route/"+id,
+          type : "get",
+          success : function (data) {
+              var dataL = data.obj,
+                  result = data.success,
+                  html = "";
+              if(result){
+                  html += "<tr>" ;
+                  html += "<td>"+ dataL.name + "</td>";
+                  html += "<td>"+ dataL.age + "</td>";
+                  html += "<td>"+ dataL.gender + "</td>";
+                  html += "<td>"+ dataL.grade + "</td>";
+                  html += "</tr>" ;
+                  $('#list').empty().append(html);
+              }else {
+                  $('#list').empty();
+                  $('#msg').html(dataL);
+              }
+          }
+      })
+    };
+
+    sendGetPost.onclick = function(){
+        $.ajax({
+            url:"/getPM",
+            type : "post",
+            success : function (data) {
+                $('#msg').html(data);
+            }
+        })
+    };
+    sendPost.onclick = function(){
+        $.ajax({
+            url : "/postM",
+            type : "post",
+            success : function(data){
+                $('#msg').html(data);
+            }
+        })
+    };
+    sendGet.onclick = function(){
+        $.ajax({
+            url : "/getM",
+            type : "get",
+            success : function(data){
+                var dataL = data.obj;
+                var html = '';
+                for(var i in dataL){
+                    html += "<tr>" ;
+                    html += "<td>"+ dataL[i].name + "</td>";
+                    html += "<td>"+ dataL[i].age + "</td>";
+                    html += "<td>"+ dataL[i].gender + "</td>";
+                    html += "<td>"+ dataL[i].grade + "</td>";
+                    html += "</tr>" ;
+                }
+                $('#list').empty().append(html);
+
+            }
+        })
+    }
+</script>
+</body>
+</html>

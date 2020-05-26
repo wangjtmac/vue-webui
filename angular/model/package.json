@@ -1,0 +1,47 @@
+{
+  "name": "model",
+  "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update --standalone false --gecko false",
+    "e2e": "protractor"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/compiler": "^7.2.0",
+    "@angular/core": "^7.2.0",
+    "@angular/forms": "^7.2.0",
+    "@angular/http": "^7.2.0",
+    "@angular/platform-browser": "^7.2.0",
+    "@angular/platform-browser-dynamic": "^7.2.0",
+    "@angular/router": "^7.2.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^6.3.3",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.8.26",
+    "rxjs-compat": "^6.0.0-rc.0"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "^7.2.0",
+    "@types/jasmine": "3.3.5",
+    "@types/node": "^10.12.18",
+    "angular-cli": "1.0.0-beta.28.3",
+    "codelyzer": "~4.5.0",
+    "jasmine-core": "3.3.0",
+    "jasmine-spec-reporter": "4.2.1",
+    "karma": "3.1.4",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^2.0.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-remap-istanbul": "^0.6.0",
+    "protractor": "~5.4.2",
+    "ts-node": "7.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "~3.2.2"
+  }
+}

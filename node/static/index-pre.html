@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>项目</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/zxx.lib.css">
+</head>
+<body ng-app="myApp">
+<div ng-include="'header.html'"></div>
+<section ng-controller="myCtrl" class="container-fluid p10">
+    <div>
+        <ul class="nav-tabs nav">
+            <li ng-class="{true:'active',false : ''}[m.focus]" ng-repeat="m in menus"><a ng-click="changeLink($event)" data-url="{{m.url}}" href data-toggle="tab">{{m.title}}</a></li>
+        </ul>
+        <div ng-include="url" class="">...</div>
+    </div>
+</section>
+
+<div ng-include="'footer.html'"></div>
+
+
+<script src="js/jQuery3.0.js"></script>
+<script src="js/angular.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    var app = angular.module('myApp', []);
+
+    function myCtrl($scope ,$http, $element) {
+        $scope.navClass = true;
+        $http.get('data/menu.json').then(function(result){
+            $scope.menus = result.data ;
+            $scope.url = result.data[0].url;
+        });
+        $scope.changeLink = function(e){
+            $scope.url = $(e.target).attr('data-url');
+        }
+    }
+    app.controller('myCtrl',myCtrl)
+</script>
+</body>
+</html>

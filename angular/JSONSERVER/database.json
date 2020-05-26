@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "name": "Henry",
+      "email": "henry@gmail.com",
+      "phone": "13543235675",
+      "balance": 1002,
+      "id": 1
+    },
+    {
+      "name": "John",
+      "email": "john@gmail.com",
+      "phone": "13543235675",
+      "balance": 120,
+      "id": 4
+    },
+    {
+      "name": "Leanne Graham",
+      "email": "loenwang@loen.wang",
+      "phone": "13452341234",
+      "balance": 120,
+      "id": 5
+    },
+    {
+      "name": "viskjakkd",
+      "email": "Sincere@april.com",
+      "phone": "18098762345",
+      "balance": 32,
+      "id": 6
+    },
+    {
+      "name": "Hemiah",
+      "email": "hemiah@mail.com",
+      "phone": "15006052234",
+      "balance": "342",
+      "id": 7
+    },
+    {
+      "name": "bucky",
+      "email": "loenwang@loen.wang",
+      "phone": "13098765432",
+      "balance": "2",
+      "id": 8
+    },
+    {
+      "name": "sdd",
+      "email": "loenwang@loen.wang",
+      "phone": "13900001234",
+      "balance": 0,
+      "id": 9
+    },
+    {
+      "name": "Henry",
+      "balance": "1002",
+      "id": 10
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "Apple",
+      "description": "Apple is good!"
+    },
+    {
+      "id": 2,
+      "name": "Microsoft",
+      "description": "Microsoft is good!"
+    },
+    {
+      "id": 3,
+      "name": "Google",
+      "description": "Google is good!"
+    }
+  ]
+}
